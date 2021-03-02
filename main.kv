@@ -29,6 +29,6 @@
         text : 'GO'
         id : button1
         size_hint : 1, 0.1
-        on_release : label.text = root.find_item(id = textinput.text)
+        on_release : root.set_label_text(text = root.find_item(id = textinput.text), label = label)
         background_color : (104/255, 255/255, 245/255, 1)
 
